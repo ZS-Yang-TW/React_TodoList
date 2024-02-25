@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const DATA = [
+  { id: "todo-0", name: "完成 React TodoList", completed: false },
+  { id: "todo-1", name: "準備到職物品", completed: false },
+  { id: "todo-2", name: "閱讀完《逃避自由》", completed: false },
+];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={DATA} />
   </React.StrictMode>
 );
 
